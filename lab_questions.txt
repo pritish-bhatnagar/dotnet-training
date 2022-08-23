@@ -1,99 +1,36 @@
 
-Questions for assessment
+1. What will be the output of the following C# code?
 
 
-1.(Select) which statement/statements are true ?
-    a.readonly and constants are the same
-    b.readonly fields can be initialized only when declared
-    c.readonly fields can be initialized by the Constructor
-    d.constants can be initialized by the constructor
-    e.Constants should be assigned a value when declared 
-    f.none of the above
-
-    Answer : c and e
-
-2. Class B inherits from class A. The constructor of class A displays "a", 
-   while the class B constructor displays "b".
-   What is output to the screen when the code A a = new B(); is run?
-
-    a. ab
-    b. a
-    c. b
-    d. ba
-
-    Answer : a
-
-
-
-
-
-
-3. What will be the output of the following C# code?
-
-class maths
+ static void Main(string[] args)
  {
-     public maths()
+     float s = 0.1f;
+     while (s <= 0.5f)
      {
-         Console.WriteLine("constructor 1 :");
+         ++s;
+         Console.WriteLine(s);
      }
-     public maths(int x)
-     {
-         int p = 2;
-         int u;
-         u = p + x;
-         Console.WriteLine("constructor 2: " +u);
-     }
- }
- class Program
- {
-     static void Main(string[] args)
-     {
-         maths k = new maths(4);
-         maths t = new maths();
-         Console.ReadLine();
-     }
+     Console.ReadLine();
  }
 
 
-a)
+a) 0.1
+b) 1.1
+c) 0.1 0.2 0.3 0.4 0.5
+d) No output
 
-constructor 1:
-constructor 2: 6
-
-b)
-
-constructor 2: 6
-constructor 2: 6
+Answer: b
+Explanation: For the first while condition check when s = 0. If it is true as control goes inside loop ++s increments value of s by 1 as 1+0.1 = 1.1. So, for next condition while loop fails and hence, prints final value of s as 1.1.
 
 
-c)
+2. If base class consist of two private integers, one static integer and derived class consist of two static integers and one private integer. What would be the size of derived class object?
 
-constructor 2: 6
-constructor 1:
+a) size of object depends on sizes of its non static data members
 
+b) size of a derived class object is sum of sizes of non static data members of base class and derived class
+
+c) size of object is calculated using sizeof() method
 
 d) none of the mentioned
 
-
-Answer-- C
-
-
-
-
-4. Which are the two things you need to take care of in your ASP.Net application to take advantage of connection pooling.
-
-a) You need to set the Pooling property of the Connection object to True
-
-
-b) You need to use the same exact connection string whenever you open a database connection
-
-
-c) You need to call the ReleaseToPool() method after the connection is closed
-
-
-d) You need to explicitly close the connection with the Close() method
-
-
-Answer-- B
-    
-
+Answer: a
