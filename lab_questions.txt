@@ -2,7 +2,34 @@ swsqs
 1. What will be the output of the following C# code?
 
 
+<<<<<<< HEAD
  static void Main(string[] args)
+=======
+1.(Select) which statement/statements are true ?
+    a.readonly and constants are the same
+    b.readonly fields can be initialized only when declared
+    c.readonly fields can be initialized by the Constructor
+    d.constants can be initialized by the constructor
+    e.Constants should be assigned a value when declared 
+    f.none of the above
+
+    Answer : c and e
+
+2. Class B inherits from class A. The constructor of class A displays "a", 
+   while the class B constructor displays "b".
+   What is output to the screen when the code A a = new B(); is run?
+
+    a. ab
+    b. a
+    c. b
+    d. ba
+
+    Answer : a
+
+3. What will be the output of the following C# code?
+
+class maths
+>>>>>>> 310a2e6cc16840b55fc268c927e81541654edf21
  {
      float s = 0.1f;
      while (s <= 0.5f)
@@ -24,6 +51,121 @@ Explanation: For the first while condition check when s = 0. If it is true as co
 
 
 2. If base class consist of two private integers, one static integer and derived class consist of two static integers and one private integer. What would be the size of derived class object?
+
+a) size of object depends on sizes of its non static data members
+
+b) size of a derived class object is sum of sizes of non static data members of base class and derived class
+
+c) size of object is calculated using sizeof() method
+
+d) none of the mentioned
+
+<<<<<<< HEAD
+Answer: a
+=======
+
+Answer: C
+
+
+
+
+4. Which are the two things you need to take care of in your ASP.Net application to take advantage of connection pooling.
+
+a) You need to set the Pooling property of the Connection object to True
+
+
+b) You need to use the same exact connection string whenever you open a database connection
+
+
+c) You need to call the ReleaseToPool() method after the connection is closed
+
+
+d) You need to explicitly close the connection with the Close() method
+
+
+Answer: B
+
+3. Which of the following jobs are NOT performed by Garbage Collector?
+i) Freeing memory on the stack.
+ii) Avoiding memory leaks.
+iii) Freeing memory occupied by unreferenced objects.
+iv) Closing unclosed database collections.
+v) Closing unclosed files.
+A.	i, ii, iii
+B.	iii, v
+C.	i, iv, v
+D.	iii, iv
+
+Answer: C
+
+4. Which of the following statements is correct about Managed Code?
+
+A.	Managed code is the code that is compiled by the JIT compilers.
+B.	Managed code is the code where resources are Garbage Collected.
+C.	Managed code is the code that runs on top of Windows.
+D.	Managed code is the code that is written to target the services of the CLR.
+
+Answer: D
+
+    
+3. Garbage collection automatically reclaims memory occupied by unreachable unused objects." – This statement is true or false in C#?
+
+    a. True
+    b. False
+    
+    ANSWER. a
+
+4. Which of these is not a correct statement?
+    a. A recursive method must have a base case
+    b. Recursion always uses stack
+    c. Recursion is always managed by C# Runtime environment
+    d. Recursive methods are faster that programmer written loop to call the function repeatedly using a stack
+    
+    ANSWER. c
+
+5. Duck typing is implemented by using which of the following keyword 
+    a. dynamic
+    b. object
+    c. ref
+    d. base
+
+    Anser: a
+
+6. The point at which and exception is thrown is called
+    a. Default point
+    b. Invoking point
+    c. Calling point
+    d. Throw point
+        
+    Anser: d    
+ 
+>>>>>>> 310a2e6cc16840b55fc268c927e81541654edf21
+
+7. What will be the output of the following C# code?
+
+
+ static void Main(string[] args)
+ {
+     float s = 0.1f;
+     while (s <= 0.5f)
+     {
+         ++s;
+         Console.WriteLine(s);
+     }
+     Console.ReadLine();
+ }
+
+
+a) 0.1
+b) 1.1
+c) 0.1 0.2 0.3 0.4 0.5
+d) No output
+
+Answer: b
+Explanation: For the first while condition check when s = 0. If it is true as control goes inside loop ++s increments value of s by 1 as 1+0.1 = 1.1. So, for next condition while loop fails and hence, prints final value of s as 1.1.
+
+
+8. If base class consist of two private integers, one static integer and derived class consist of two static integers and one private integer. What would be the size of derived class object?
 
 a) size of object depends on sizes of its non static data members
 
