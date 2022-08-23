@@ -165,7 +165,7 @@ Answer: b
 Explanation: For the first while condition check when s = 0. If it is true as control goes inside loop ++s increments value of s by 1 as 1+0.1 = 1.1. So, for next condition while loop fails and hence, prints final value of s as 1.1.
 
 
-8. If base class consist of two private integers, one static integer and derived class consist of two static integers and one private integer. What would be the size of derived class object?
+8.. If base class consist of two private integers, one static integer and derived class consist of two static integers and one private integer. What would be the size of derived class object?
 
 a) size of object depends on sizes of its non static data members
 
